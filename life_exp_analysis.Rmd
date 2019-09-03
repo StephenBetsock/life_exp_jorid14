@@ -32,7 +32,14 @@ gapminder_unfiltered %>%
 We will now re-create the plot from Oeppen and Vaupel 2002
 
 ```{r}
-
+library(ggplot2)
+sumdat %>% 
+ggplot(aes(x = year, 
+           y = lifeExp, 
+           color=country)) + 
+  geom_point(aes(color=country)) +
+  geom_smooth(method = "lm", se=FALSE) +
+  geom_point(shape=1)
 ```
 
 
