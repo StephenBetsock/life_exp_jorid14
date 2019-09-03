@@ -31,4 +31,15 @@ gapminder_unfiltered %>%
 
 We will now re-create the plot from Oeppen and Vaupel 2002
 
+```{r}
+
+```
+
+
+git status
+git add
+git commit -m "a message"
+git push
+
+
 
